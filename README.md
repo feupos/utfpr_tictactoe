@@ -56,6 +56,11 @@ To run the game:
 
 #### A player wins
 
+When does a player win? When its symbol fills a line, a column or a diagonal.
+
 #### There is a tie
+
+When is there a tie? When there is no empty space left. 
+
 6. **+ plays on (2,2)** — + overwrites O — ✅ valid move  
 1. **X plays on (1,1)** — ❌ invalid move: X is retaliating against O’s overwrite in move 5, violating the anti-revenge rule
