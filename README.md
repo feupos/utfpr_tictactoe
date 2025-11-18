@@ -60,6 +60,8 @@ To run the game:
 
 When does a player win? When its symbol fills a line, a column or a diagonal.
 
+Example: <https://gist.github.com/adolfont/b145cb236d412aa25582f65d205dc2b1>
+
 #### There is a tie
 
 When is there a tie? When there is no empty space left. 
