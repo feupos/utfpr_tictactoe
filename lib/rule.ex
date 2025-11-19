@@ -16,10 +16,12 @@ defmodule Rule do
   ]
 
   def check_winner(%Board{cells: cells}) do
+    winner = Enum.find(Player.allowed_symbols(), fn symbol ->
+      winner?(cells, symbol)
+    end)
+
     cond do
-      winner?(cells, :x) -> {:winner, :x}
-      winner?(cells, :o) -> {:winner, :o}
-      winner?(cells, :+) -> {:winner, :+}
+      winner -> {:winner, winner}
       board_full?(cells) -> :draw
       true -> :no_winner
     end

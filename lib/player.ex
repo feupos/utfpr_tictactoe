@@ -7,6 +7,8 @@ defmodule Player do
     %Player{symbol: symbol, id: id}
   end
 
+  def allowed_symbols, do: @allowed_symbols
+
   def setup_players() do
     player1 = get_player_symbol("Player 1", [])
     player2 = get_player_symbol("Player 2", [player1.symbol])
